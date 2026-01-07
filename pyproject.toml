@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qip-stack"
+version = "0.1.0"
+description = "A minimal, modular quantum information processing stack (states, operators, dynamics, noise, control, circuits)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adrian Pencil" }]
+dependencies = [
+  "numpy>=1.26",
+]
+
+[project.scripts]
+qip = "qip.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qip"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

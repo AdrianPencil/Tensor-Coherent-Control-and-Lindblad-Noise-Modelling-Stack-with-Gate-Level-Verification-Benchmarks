@@ -1,0 +1,20 @@
+% 09_performance.tex
+
+\section{Performance}
+
+This project aims to remain dependency-light and to rely on efficient NumPy
+kernels.
+
+Key practices:
+\begin{itemize}
+  \item prefer contiguous arrays for BLAS-friendly operations
+  \item avoid constructing full $2^{n}\times 2^{n}$ matrices per gate where possible
+  \item keep core routines small enough to profile and replace
+\end{itemize}
+
+For large-scale simulations, the recommended strategy is:
+\begin{itemize}
+  \item use the circuit tensor backend for gate-level simulation,
+  \item use Lindblad solvers for small open-system models,
+  \item introduce sparse or GPU backends only when the workload demands it.
+\end{itemize}

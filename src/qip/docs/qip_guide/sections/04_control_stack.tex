@@ -1,0 +1,16 @@
+% 04_control_stack.tex
+
+\section{Control stack}
+
+The control layer is split into:
+\begin{itemize}
+  \item pulse envelopes (\texttt{control.pulses})
+  \item Hamiltonian composition (\texttt{control.controls})
+  \item calibration values (\texttt{control.calibration})
+  \item lightweight optimization scaffolding (\texttt{control.optimal})
+\end{itemize}
+
+A common abstraction is:
+\[
+H(t) = H_{0} + \sum_{k} u_{k}(t) H_{k}.
+\]

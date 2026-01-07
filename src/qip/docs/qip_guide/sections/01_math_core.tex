@@ -1,0 +1,38 @@
+% 01_math_core.tex
+
+\section{Math core}
+
+We work with finite-dimensional Hilbert spaces $\Hil \cong \mathbb{C}^{d}$.
+
+\subsection{States}
+
+A pure state is $\ket{\psi}\in\Hil$.
+A mixed state is a density matrix $\rho\in\mathbb{C}^{d\times d}$ with:
+\[
+\rho = \rho^{\dagger},\quad \rho \succeq 0,\quad \Tr(\rho)=1.
+\]
+
+\subsection{Operators}
+
+Operators are complex matrices acting on column vectors:
+\[
+\ket{\psi'} = A\ket{\psi}.
+\]
+The adjoint is $A^{\dagger}$.
+
+\subsection{Unitary evolution}
+
+Given a (time-independent) Hamiltonian $H=H^{\dagger}$, the unitary is:
+\[
+U(t) = \e^{-\ii H t}.
+\]
+
+\subsection{Lindblad evolution}
+
+For open-system dynamics:
+\[
+\frac{\dd \rho}{\dd t}
+= -\ii [H,\rho]
++ \sum_{k}\gamma_{k}\Bigl(L_{k}\rho L_{k}^{\dagger}
+-\frac{1}{2}\{L_{k}^{\dagger}L_{k},\rho\}\Bigr).
+\]

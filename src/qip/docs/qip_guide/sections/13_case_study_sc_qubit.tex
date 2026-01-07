@@ -1,0 +1,17 @@
+% 13_case_study_sc_qubit.tex
+
+\section{Case study: superconducting qubit end-to-end}
+
+This case study demonstrates an integration path:
+
+\begin{enumerate}
+  \item load calibration values and a measured noise PSD,
+  \item fit a simple PSD model (1/f plus white),
+  \item map PSD to effective rates $(\gamma_{\phi}, \gamma_{1})$,
+  \item build a Lindblad model,
+  \item simulate a short driven evolution intended to implement an $X$ gate,
+  \item evaluate density fidelity against the ideal target.
+\end{enumerate}
+
+The physics mapping is a scaffold intended to be replaced by a device-derived model.
+The value of the case study is that it is end-to-end, typed, and regression-testable.

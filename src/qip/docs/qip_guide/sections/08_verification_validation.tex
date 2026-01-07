@@ -1,0 +1,21 @@
+% 08_verification_validation.tex
+
+\section{Verification and validation}
+
+\subsection{Verification}
+
+Verification answers: did we implement the math we intended?
+
+This is primarily addressed by:
+\begin{itemize}
+  \item unit tests in \texttt{tests/}
+  \item invariants such as trace preservation and unitarity checks
+\end{itemize}
+
+\subsection{Validation}
+
+Validation answers: does the model predict reality?
+
+\qip{} includes case studies with measured-ish inputs (PSD, calibration) as a
+structure for validation, but the physical mapping from inputs to rates and
+Hamiltonians is intentionally lightweight in the initial scaffold.

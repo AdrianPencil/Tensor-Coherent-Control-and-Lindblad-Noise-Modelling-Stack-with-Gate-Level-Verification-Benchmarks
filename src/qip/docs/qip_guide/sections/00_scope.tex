@@ -1,0 +1,18 @@
+% 00_scope.tex
+
+\section{Scope}
+
+\qip{} is a modular, minimal codebase intended to support:
+
+\begin{itemize}
+  \item states (pure and mixed),
+  \item operators (dense and light sparse),
+  \item dynamics (Hamiltonian and Lindblad),
+  \item noise models (PSD, channels, identification),
+  \item control scaffolding (pulses, calibration, light optimization),
+  \item circuits (gates, composition, simulation),
+  \item concrete case studies that connect these layers end-to-end.
+\end{itemize}
+
+This guide focuses on API structure and reproducible pipelines, not full-blown device-level accuracy.
+The intent is that you can replace or refine any modeling component without rewriting the stack.

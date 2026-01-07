@@ -1,0 +1,26 @@
+% 07_benchmarking.tex
+
+\section{Benchmarking}
+
+\qip{} includes a small benchmarking layer intended for regression tests and
+quick validation loops.
+
+\subsection{Fidelity}
+
+For pure states:
+\[
+F(\ket{\psi},\ket{\phi}) = |\braket{\psi}{\phi}|^{2}.
+\]
+
+For density matrices, \qip{} uses the Uhlmann fidelity:
+\[
+F(\rho,\sigma) = \Bigl(\Tr\sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}\Bigr)^{2}.
+\]
+
+\subsection{Gate benchmarking}
+
+For unitary gates, a process fidelity proxy is used:
+\[
+F_{p}(U,V) = \frac{|\Tr(U^{\dagger}V)|^{2}}{d^{2}}.
+\]
+From this a standard average infidelity proxy is computed.

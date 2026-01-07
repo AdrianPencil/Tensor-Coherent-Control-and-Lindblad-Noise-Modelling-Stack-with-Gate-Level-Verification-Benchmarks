@@ -1,0 +1,19 @@
+% 05_noise_stack.tex
+
+\section{Noise stack}
+
+Noise is represented in two complementary ways:
+
+\subsection{Spectral view}
+
+\texttt{noise.spectra} provides PSD models $S(\omega)$ with $\omega$ in rad/s.
+\texttt{noise.identification} provides a small fitter for a 1/f plus white model.
+
+\subsection{Channel view}
+
+\texttt{noise.channels} provides Kraus-channel constructors for common 1-qubit noise.
+
+\subsection{Effective-rate view}
+
+\texttt{noise.models} provides pragmatic mapping from PSD to effective rates.
+These mappings are scaffolds intended to be replaced by device-derived formulas.

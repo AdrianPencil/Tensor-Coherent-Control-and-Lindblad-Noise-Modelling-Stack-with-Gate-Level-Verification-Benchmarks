@@ -1,0 +1,20 @@
+% 06_device_adapters.tex
+
+\section{Device adapters}
+
+Device adapters provide a stable boundary between physics models and workflows.
+
+A device is expected to provide:
+\begin{itemize}
+  \item a drift Hamiltonian,
+  \item a control Hamiltonian construction given calibration,
+  \item optional effective noise rates for early Lindblad modeling.
+\end{itemize}
+
+This keeps case studies and pipelines uniform across platforms such as:
+\begin{itemize}
+  \item superconducting qubits
+  \item trapped ions
+  \item neutral atoms
+  \item photonics (dual-rail)
+\end{itemize}

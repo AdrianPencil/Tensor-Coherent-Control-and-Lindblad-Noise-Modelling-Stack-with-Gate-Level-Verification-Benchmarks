@@ -1,0 +1,13 @@
+% 12_circuit_gate_layer.tex
+
+\section{Circuit and gate layer}
+
+The circuits layer provides:
+\begin{itemize}
+  \item gate objects with explicit qubit indices and dense matrices
+  \item a circuit container for composition
+  \item tensor-based simulation for statevectors and density matrices
+\end{itemize}
+
+This layer is not intended to be only a gate library -it is a stable abstraction
+boundary that can later be transpiled into device-native pulse descriptions.

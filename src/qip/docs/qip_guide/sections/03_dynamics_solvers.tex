@@ -1,0 +1,29 @@
+% 03_dynamics_solvers.tex
+
+\section{Dynamics and solvers}
+
+\subsection{Hamiltonians}
+
+\texttt{qip.dynamics.hamiltonian.Hamiltonian} supports:
+\begin{itemize}
+  \item static $H$ stored as a matrix
+  \item time-dependent $H(t)$ via a callable
+\end{itemize}
+
+\subsection{Propagators}
+
+For Hermitian $H$, \qip{} computes $U(t)=\e^{-\ii H t}$ via eigen-decomposition.
+This avoids heavier dependencies and is stable for Hermitian matrices.
+
+\subsection{Lindblad models}
+
+\texttt{qip.dynamics.lindblad.LindbladModel} stores:
+\begin{itemize}
+  \item a Hamiltonian $H(t)$
+  \item collapse operators $L_{k}$
+  \item rates $\gamma_{k}\ge 0$
+\end{itemize}
+
+\subsection{ODE stepping}
+
+A minimal RK4 integrator is provided for prototyping and tests.

@@ -1,0 +1,34 @@
+% 02_state_operator_api.tex
+
+\section{State and operator API}
+
+\subsection{State vectors}
+
+\texttt{qip.states.state.StateVector} stores a contiguous complex vector.
+Core operations:
+\begin{itemize}
+  \item construction from array
+  \item normalization
+  \item inner product
+\end{itemize}
+
+\subsection{Density matrices}
+
+\texttt{qip.states.density.DensityMatrix} stores a contiguous complex matrix.
+Core operations:
+\begin{itemize}
+  \item trace
+  \item basic hermiticity/trace-one checks
+  \item expectation values
+  \item unitary conjugation $\rho\mapsto U\rho U^{\dagger}$
+\end{itemize}
+
+\subsection{Operators}
+
+\texttt{qip.operators.operator.Operator} wraps a dense square matrix.
+Core operations:
+\begin{itemize}
+  \item dagger
+  \item tensor product
+  \item application to a state vector
+\end{itemize}

@@ -1,0 +1,22 @@
+% 10_examples.tex
+
+\section{Examples}
+
+\subsection{Bell state}
+
+A simple Bell-state circuit:
+\[
+\ket{\Phi^{+}} = \frac{1}{\sqrt{2}}(\ket{00}+\ket{11}).
+\]
+
+In code, this corresponds to:
+\begin{itemize}
+  \item apply $H$ to qubit 0
+  \item apply CNOT with control 0, target 1
+\end{itemize}
+
+\subsection{End-to-end case study}
+
+The superconducting-qubit case study loads a calibration and noise PSD,
+fits a small PSD model, derives effective rates, and runs a Lindblad simulation
+as a compact integration example.
