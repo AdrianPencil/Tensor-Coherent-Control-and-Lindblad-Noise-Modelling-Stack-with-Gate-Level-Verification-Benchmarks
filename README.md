@@ -1,4 +1,6 @@
-# qip-stack
+# qip (work alongside qmet-stack)
+
+Please see https://github.com/AdrianPencil/Tensor-Based-Quantum-Metrology-Stack-for-POVMs-Continuous-Measurement-and-Fisher-Information-Bounds for more info.
 
 A minimal, modular Quantum Information Processing stack that connects:
 
