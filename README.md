@@ -70,6 +70,3 @@ Most QIP codebases are either:
 
 ## Quickstart
 
-### Install (editable dev install)
-```bash
-pip install -e .
